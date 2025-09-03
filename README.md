@@ -8,8 +8,10 @@ Favorite classes prior to joining UT:
 - Autonomous Robotics
 - Deep learning
 
+---
+This repo is part of the DSE511 introduction assignment.
+---
+# Notes for running the code:
+1. Run main.py
 
-# Notes for running the code.
-Run main.py
-
-press enter on terminal. Code gets executed, and takes me through some of my professional journey with some quirky fun facts
+2. press enter on terminal. Code executes and takes you through some of my professional journey with quirky fun facts
