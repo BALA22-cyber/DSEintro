@@ -2,6 +2,7 @@ import time
 import random
 
 def ascii_art():
+    """Simple ASCII art function"""
     art = r'''
   _      _  __      ____                   _   
  | |    (_)/ _|    / __ \                 | |  
@@ -29,19 +30,20 @@ plot_twists = [
 ]
 
 def slow_print(text, delay=0.02):
-    for ch in text:
-        print(ch, end="", flush=True)
+    """Funtion for printing text slowly"""
+    for character in text:
+        print(character, end="", flush=True)
         time.sleep(delay)
-    print()
+    print() 
 
 
 def my_adventure():
     ascii_art()
     slow_print("Welcome to My LifeQuest: The Polymath Path!\n")
-    for stage, desc in stages:
+    for stage, description in stages:
         input(f"\nPress ENTER to travel to {stage}...")
-        slow_print(f"\n {stage}: {desc}")
-        if random.random() < 0.9:
+        slow_print(f"\n {stage}: {description}")
+        if random.random() < 0.9: # to ensure some plot twist appears
             twist = random.choice(plot_twists)
             slow_print(f"\n Random lessons from gaming/life: {twist}")
 
